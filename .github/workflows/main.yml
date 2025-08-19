@@ -11,10 +11,10 @@ jobs:
       uses: devellany/send-mail@v1.0.2
       with:
           host: smtp.google.com
-          account: ${{SECRET_EMAIL}}
-          password: ${{SECRET_PASSWORD}}
+          account: ${{secrets..SECRET_EMAIL}}
+          password: ${{secrets.SECRET_PASSWORD}}
           sender: devellany
-          from: ${{SECRET_EMAIL}}
+          from: ${{secrets.SECRET_EMAIL}}
           subject: Temporary line of text
           body: file://linesofcode.txt
           attachments: '[{"path":"linesofcode.txt"}]'
