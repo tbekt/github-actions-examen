@@ -16,6 +16,6 @@ jobs:
           sender: devellany
           from: ${{secrets.SECRET_EMAIL}}
           subject: Temporary line of text
-          body: file://tmp/linesofcode.txt
-          attachments: '[{"path":"linesofcode.txt"}]'
+          body: file://linesofcode.txt
+          attachments: file://linesofcode.txt
           to: devellany@gmail.com
