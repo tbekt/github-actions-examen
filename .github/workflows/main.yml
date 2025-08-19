@@ -12,7 +12,7 @@ jobs:
       with:
           host: smtp.google.com
           account: ${{SECRET_EMAIL}}
-          password: ${{secrets.MAIL_PASSWORD}}
+          password: ${{SECRET_PASSWORD}}
           sender: devellany
           from: ${{SECRET_EMAIL}}
           subject: Temporary line of text
